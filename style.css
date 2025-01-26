@@ -1354,12 +1354,13 @@ footer {
     .product {
         width: 45%;
         height: auto;
+        padding:10px;
         margin: 6px;
     }
 
 
     img {
-        height: 150px;
+        height: 130px;
     }
 
     h4 {
