@@ -1,0 +1,1470 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 150px;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(206, 206, 212, 1) 70%, rgba(179, 176, 176, 1) 100%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+    z-index: 9999999999999999999999999;
+}
+
+.Menu{
+    width: 100%;
+    height: auto;
+    opacity: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#menu_btn {
+    width: 30px;
+    aspect-ratio: 1;
+    display: none;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    margin-right: 10px;
+    background-color: transparent;
+    font-size: 20px;
+
+    &>span {
+        height: 2px;
+        width: 80%;
+        background-color: #eb5424;
+        transition: .4s ease;
+        border-radius: 5px;
+    }
+}
+
+.open {
+    background-color: red;
+
+    &>span:first-child {
+        transform: rotate(45deg) translateY(6px);
+    }
+
+    &>span:nth-child(2) {
+        display: none;
+    }
+
+    &>span:last-child {
+        transform: rotate(-42deg) translateY(-7px);
+    }
+}
+
+.Logo {
+    width: 13%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+
+    i {
+        font-size: 45px;
+    }
+
+    h3 {
+        font-size: 30px;
+    }
+}
+
+.Title {
+    width: 35%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+
+    h4 {
+        font-size: 30px;
+        font-weight: 800;
+        border-bottom: 1px solid black;
+    }
+
+    span {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        font-size: 25px;
+        font-weight: 800;
+    }
+}
+
+.Data {
+    width: 15%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 5px;
+
+    span {
+        font-size: 27px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+
+    }
+
+    span:hover {
+        a {
+            color: #eb7d27;
+        }
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+        font-weight: 600;
+        transition: .3s;
+    }
+
+}
+
+#product_box {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.product {
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0 10px 25px #00000024;
+    display: inline-block;
+    text-align: center;
+    transition: .4s;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.product:hover {
+    scale: 1.05;
+}
+
+img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+h4 {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+footer {
+    width: 100%;
+    height: 170px;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(206, 206, 212, 1) 70%, rgba(179, 176, 176, 1) 100%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px 0px 0px 0px;
+    border-top: 1px solid rgb(154, 154, 154);
+    overflow: hidden;
+}
+
+.Logo_2{
+    width: 8%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+
+    i {
+        font-size: 50px;
+    }
+
+    h3 {
+        font-size: 30px;
+    }
+}
+
+.footer_text {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.Contacts {
+    width: 42%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-right: -5%;
+}
+
+.Contacts a{
+    width: 210px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 21px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px #00000088;
+    text-decoration: none;
+    cursor: pointer;
+
+    gap: 15px;
+    transition: .3s;
+}
+
+.Contacts a:first-child{
+    border: none;
+    background: rgb(131,58,180);
+    background: linear-gradient(166deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+
+    i{  padding: 0 0 0 13px;
+        font-size: 40px;
+    }
+}
+
+.Contacts a:nth-child(2){
+    border: none;
+    background-color: #1877F2;
+
+    i{  padding: 0 0 0 13px;
+        font-size: 40px;
+    }
+}
+
+.Contacts a:nth-child(3){
+    border: none;
+    background-color: #13990a;
+
+    i{  padding: 0 0 0 13px;
+        font-size: 40px;
+    }
+}
+.Contacts a:last-child{
+    border: none;
+    background-color: #7360f2;
+
+    i{  padding: 0 0 0 13px;
+        font-size: 40px;
+    }
+    
+}
+
+.Contacts a:hover{
+    background-color: black;
+
+}
+
+@media (min-width: 2000px) {
+    header {
+        width: 100%;
+        height: 200px;
+    }
+
+    .Logo {
+        width: 14%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+
+        i {
+            font-size: 50px;
+        }
+
+        h3 {
+            font-size: 40px;
+        }
+    }
+
+    .Title {
+        width: 44%;
+        height: 100%;
+
+        h4 {
+            font-size: 37px;
+            font-weight: 800;
+            border-bottom: 1px solid black;
+        }
+
+        span {
+            font-size: 32px;
+            font-weight: 800;
+        }
+    }
+
+    .Data {
+        width: 17%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 5px;
+
+        span {
+            font-size: 37px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+    }
+
+    #product_box {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    
+    .product {
+        width: 550px;
+        height: 550px;
+    }
+    
+    img {
+        height: 450px;
+    }
+    
+    h4 {
+        font-size: 33px;
+        margin-top: 15px;
+    }
+
+    footer {
+        width: 100%;
+        height: 200px;
+    }
+    
+    .Logo_2{
+        width: 9%;
+        height: 100%;
+    
+        i {
+            font-size: 53px;
+        }
+    
+        h3 {
+            font-size: 33px;
+        }
+    }
+    
+    .footer_text {
+        font-size: 27px;
+        font-weight: 600;
+    }
+    
+    .Contacts {
+        width: 40%;
+        height: 100%;
+    }
+    
+    .Contacts a{
+        transition: .3s;
+    }
+    
+    .Contacts a:first-child{
+        width: 210px;
+        height: 100px;
+    
+        i{  padding: 0 0 0 13px;
+            font-size: 40px;
+        }
+    }
+    
+    .Contacts a:nth-child(2){
+        width: 210px;
+        height: 100px;  
+    
+        i{  padding: 0 0 0 13px;
+            font-size: 40px;
+        }
+    }
+    
+    .Contacts a:nth-child(3){
+        width: 210px;
+        height: 100px;
+        border: none;
+    
+        i{  padding: 0 0 0 13px;
+            font-size: 40px;
+        }
+    }
+    .Contacts a:last-child{
+        width: 210px;
+        height: 100px;
+    
+        i{  padding: 0 0 0 13px;
+            font-size: 40px;
+        }
+        
+    }
+    
+    .Contacts a:hover{
+        background-color: black;
+    
+    }
+
+}
+
+@media (min-width: 1440px) and (max-width:1920px) {
+
+    header {
+        width: 100%;
+        height: 150px;
+    }
+
+    .Logo {
+        width: 25%;
+        height: 100%;
+
+        i {
+            font-size: 44px;
+        }
+
+        h3 {
+            font-size: 25px;
+        }
+    }
+
+    .Title {
+        width: 55%;
+        height: 100%;
+
+        h4 {
+            font-size: 21px;
+            font-weight: 800;
+            border-bottom: 1px solid black;
+        }
+
+        span {
+            font-size: 20px;
+            font-weight: 800;
+        }
+    }
+
+    .Data {
+        width: 17%;
+        height: 100%;
+
+        span {
+            font-size: 24px;
+        }
+    }
+
+    #product_box {
+        width: 100%;
+        height: auto;
+    }
+    
+    .product {
+        width: 360px;
+        height: 370px;
+    }
+
+    img {
+        height: 250px;
+    }
+    
+    h4 {
+        font-size: 23px;
+        margin-top: 15px;
+    }
+
+    footer {
+        width: 100%;
+        height: 230px;
+    }
+    
+    .Logo_2{
+        width: 4%;
+        height: 100%;
+    
+        i {
+            font-size: 47px;
+        }
+    
+        h3 {
+            font-size: 30px;
+        }
+    }
+    
+    .footer_text {
+        font-size: 22px;
+        font-weight: 600;
+    }
+    
+    .Contacts {
+        width: 30%;
+        height: 100%;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+    
+    .Contacts a{
+        width: 200px;
+        height: 100px;
+        transition: .3s;
+    }
+    
+    .Contacts a:first-child{
+    
+        i{  padding: 0 0 0 1px;
+            font-size: 30px;
+        }
+    }
+    
+    .Contacts a:nth-child(2){
+
+        i{  padding: 0 0 0 13px;
+            font-size: 40px;
+        }
+    }
+    
+    .Contacts a:nth-child(3){
+        i{  padding: 0 0 0 13px;
+            font-size: 40px;
+        }
+    }
+    .Contacts a:last-child{
+
+        i{  padding: 0 0 0 13px;
+            font-size: 40px;
+        }
+        
+    }
+    
+    .Contacts a:hover{
+        background-color: black;
+    
+    }
+
+}
+
+@media (min-width: 1100px) and (max-width: 1200px){
+    .Title {
+        width: 35%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 6px;
+        /* background-color: rgb(51, 51, 212); */
+
+        h4 {
+            font-size: 20px;
+            font-weight: 800;
+            border-bottom: 1px solid black;
+        }
+
+        span {
+            font-size: 20px;
+            font-weight: 800;
+        }
+    }
+}
+@media (min-width: 1200px) and (max-width: 1300px){
+    .Title {
+        width: 35%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 6px;
+        /* background-color: rgb(51, 51, 212); */
+
+        h4 {
+            font-size: 20px;
+            font-weight: 800;
+            border-bottom: 1px solid black;
+        }
+
+        span {
+            font-size: 20px;
+            font-weight: 800;
+        }
+    }
+
+    .Logo_2{
+        width: 30%;
+        height: 100%;
+    
+        i {
+            font-size: 27px;
+        }
+    
+        h3 {
+            font-size: 20px;
+        }
+    }
+    
+    .footer_text {
+        width: 20%;
+        font-size: 17px;
+        font-weight: 600;
+    }
+
+    .Contacts {
+        width: 51%;
+        height: auto;
+        flex-wrap: wrap;
+        gap: 13px;
+    }
+    
+    .Contacts a{
+        transition: .3s;
+    }
+    
+    .Contacts a:first-child{
+        width: 170px;
+        height: 85px;
+
+        i{ 
+            padding: 0 0 0 1px;
+            font-size: 22px;
+        }
+    }
+    
+    .Contacts a:nth-child(2){
+        width: 170px;
+        height: 85px;
+
+        i{  
+            padding: 0 0 0 1px;
+            font-size: 22px;
+        }
+    }
+    
+    .Contacts a:nth-child(3){
+        width: 170px;
+        height: 85px;
+
+        i{  
+            padding: 0 0 0 1px;
+            font-size: 22px;
+        }
+    }
+    .Contacts a:last-child{
+        width: 170px;
+        height: 85px;
+
+        i{ 
+            padding: 0 0 0 1px;
+            font-size: 22px;
+        }
+    }
+}
+@media (min-width: 1300px) and (max-width: 1440px){
+    .Title {
+    width: 35%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 6px;
+
+    h4 {
+        font-size: 20px;
+        font-weight: 800;
+        border-bottom: 1px solid black;
+    }
+
+    span {
+        font-size: 20px;
+        font-weight: 800;
+    }
+}}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+    header {
+        width: 100%;
+        height: 150px;
+        background: rgb(255, 255, 255);
+        background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(206, 206, 212, 1) 70%, rgba(179, 176, 176, 1) 100%);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .Logo {
+        width: 12%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+
+        i {
+            font-size: 32px;
+        }
+
+        h3 {
+            font-size: 25px;
+        }
+    }
+ 
+    .Title {
+        width: 35%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 6px;
+
+        h4 {
+            font-size: 20px;
+            font-weight: 800;
+            border-bottom: 1px solid black;
+        }
+
+        span {
+            font-size: 20px;
+            font-weight: 800;
+        }
+    } 
+
+    .Data {
+        width: 15%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 5px;
+
+        span {
+            font-size: 23px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+    }
+    #product_box {
+        width: 100%;
+        height: auto;
+    }
+    
+    .product {
+        width: 280px;
+        height: 300px;
+    }
+    
+    img {
+        height: 240px;
+    }
+    
+    h4 {
+        font-size: 19px;
+        margin-top: 10px;
+    }
+
+    footer {
+        width: 100%;
+        height: 230px;
+    }
+    
+    .Logo_2{
+        width: 4%;
+        height: 100%;
+    
+        i {
+            font-size: 47px;
+        }
+    
+        h3 {
+            font-size: 30px;
+        }
+    }
+    
+    .footer_text {
+        font-size: 20px;
+        font-weight: 600;
+    }
+    
+    .Contacts {
+        width: 35%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 8px;
+        overflow: hidden;
+    }
+    
+    .Contacts a{
+        width: 80px;
+        height: 80px;
+        transition: .3s;
+    }
+    
+    .Contacts a:first-child{
+    
+        i{  padding: 0 0 0 1px;
+            font-size: 30px;
+        }
+    }
+    
+    .Contacts a:nth-child(2){
+
+        i{  padding: 0 0 0 13px;
+            font-size: 40px;
+        }
+    }
+    
+    .Contacts a:nth-child(3){
+        i{  padding: 0 0 0 13px;
+            font-size: 40px;
+        }
+    }
+    .Contacts a:last-child{
+
+        i{  padding: 0 0 0 13px;
+            font-size: 40px;
+        }
+        
+    }
+    
+    .Contacts a:hover{
+        background-color: black;
+    
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    header {
+        width: 100%;
+        height: 150px;
+    }
+
+    .Logo {
+        width: 32%;
+        height: 100%;
+
+        i {
+            font-size: 27px;
+        }
+
+        h3 {
+            font-size: 20px;
+        }
+    }
+
+    .Title {
+        h4 {
+            font-size: 16px;
+        }
+    
+        span {
+            font-size: 20px;
+        }
+    }
+
+    .Data {
+        width: 35%;
+        height: 100%;
+
+        span {
+            font-size: 20px;
+            gap: 10px;
+        }
+    }
+    #product_box {
+        width: 100%;
+        height: auto;
+    }
+    
+    .product {
+        width: 220px;
+        height: 220px;
+    }
+    
+    img {
+        height: 170px;
+    }
+    
+    h4 {
+        font-size: 16px;
+        margin-top: 10px;
+    }
+
+    footer {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    
+    .Logo_2{
+        width: 25%;
+        height: 100%;
+    
+        i {
+            font-size: 27px;
+        }
+    
+        h3 {
+            font-size: 20px;
+        }
+    }
+    
+    .footer_text {
+        width: 25%;
+        font-size: 17px;
+        font-weight: 600;
+    }
+    
+    .Contacts {
+        width: 51%;
+        height: auto;
+        flex-wrap: wrap;
+        gap: 13px;
+    }
+    
+    .Contacts a{
+        transition: .3s;
+    }
+    
+    .Contacts a:first-child{
+        width: 140px;
+        height: 85px;
+
+        i{ 
+            padding: 0 0 0 1px;
+            font-size: 27px;
+        }
+    }
+    
+    .Contacts a:nth-child(2){
+        width: 140px;
+        height: 85px;
+
+        i{  
+            padding: 0 0 0 1px;
+            font-size: 27px;
+        }
+    }
+    
+    .Contacts a:nth-child(3){
+        width: 140px;
+        height: 85px;
+
+        i{  
+            padding: 0 0 0 1px;
+            font-size: 27px;
+        }
+    }
+    .Contacts a:last-child{
+        width: 140px;
+        height: 85px;
+
+        i{ 
+            padding: 0 0 0 1px;
+            font-size: 27px;
+        }
+    }
+    
+    .Contacts a:hover{
+        background-color: black;
+    
+    }
+}
+
+@media (min-width: 552px) and (max-width: 640px){
+
+    header {
+        width: 100%;
+        height: 150px;
+    }
+
+    .Menu {
+        width: 100%;
+        border: 1px solid black;
+        overflow: hidden;
+        height: 0px;
+        display: flex;
+        background: white;
+        justify-content: center;
+        flex-direction: column;
+        top: 100%;
+        right: 0%;
+        position: absolute;
+        z-index: 99999999999;
+        transition: 0.5s;
+    }
+
+      .openmenu{
+        width: 100%;
+        border: 1px solid black;
+        overflow: hidden;
+        display: flex;
+        background: white;
+        justify-content: center;
+        flex-direction: column;
+        top: 100%;
+        right: 0%;
+        position: absolute;
+        z-index: 99999999999;
+        transition: 0.5s;
+        height: 400px;
+    }
+
+    #menu_btn {
+        width: 45px;
+        aspect-ratio: 1;
+        display: flex;
+
+        span {
+            height: 4px;
+            background-color: black;
+        }
+    } 
+
+    .Logo {
+        width: 27%;
+        height: 100%;
+
+        i {
+            font-size: 25px;
+        }
+
+        h3 {
+            font-size: 16px;
+        }
+    }
+
+    .Title {
+        width: 72%;
+        height: 115px;
+        h4 {
+            font-size: 20px;
+        }
+    
+        span {
+            font-size: 16px;
+        }
+    }
+
+    .Data {
+        width: 40%;
+        height: 155px;
+
+        span {
+            font-size: 25px;
+            gap: 10px;
+        }
+    }
+    #product_box {
+        width: 100%;
+        height: auto;
+    }
+    
+    .product {
+        width: 236px;
+        height: 270px;
+    }
+    
+    img {
+        height: 200px;
+    }
+    
+    h4 {
+        font-size: 15px;
+        margin-top: 1px;
+    }
+
+    footer {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 25px;
+        padding: 20px 0px;
+    }
+    
+    .Logo_2{
+        width: 34%;
+        height: 100%;
+    
+        i {
+            font-size: 27px;
+        }
+    
+        h3 {
+            font-size: 20px;
+        }
+    }
+    
+    .footer_text {
+        width: 62%;
+        font-size: 18px;
+        font-weight: 600;
+    }
+    
+    .Contacts {
+        width: 100%;
+        height: auto;
+        flex-wrap: wrap;
+        gap: 13px;
+    }
+    
+    .Contacts a{
+        transition: .3s;
+        width: 190px;
+        height: 60px;
+    }
+    
+    .Contacts a:hover{
+        background-color: black;
+    
+    }
+
+}
+@media (min-width: 640px) and (max-width: 768px){
+
+    header {
+        width: 100%;
+        height: 150px;
+    }
+
+    .Menu {
+        width: 100%;
+        border: 1px solid black;
+        overflow: hidden;
+        height: 0px;
+        display: flex;
+        background: white;
+        justify-content: center;
+        flex-direction: column;
+        top: 100%;
+        right: 0%;
+        position: absolute;
+        z-index: 99999999999;
+        transition: 0.5s;
+    }
+
+      .openmenu{
+        width: 100%;
+        border: 1px solid black;
+        overflow: hidden;
+        display: flex;
+        background: white;
+        justify-content: center;
+        flex-direction: column;
+        top: 100%;
+        right: 0%;
+        position: absolute;
+        z-index: 99999999999;
+        transition: 0.5s;
+        height: 400px;
+    }
+
+    #menu_btn {
+        width: 45px;
+        aspect-ratio: 1;
+        display: flex;
+
+        span {
+            height: 4px;
+            background-color: black;
+        }
+    } 
+
+    .Logo {
+        width: 27%;
+        height: 100%;
+
+        i {
+            font-size: 25px;
+        }
+
+        h3 {
+            font-size: 16px;
+        }
+    }
+
+    .Title {
+        width: 60%;
+        height: 115px;
+        h4 {
+            font-size: 20px;
+        }
+    
+        span {
+            font-size: 16px;
+        }
+    }
+
+    .Data {
+        width: 40%;
+        height: 155px;
+
+        span {
+            font-size: 25px;
+            gap: 10px;
+        }
+    }
+    #product_box {
+        width: 100%;
+        height: auto;
+    }
+    
+    .product {
+        width: 280px;
+        height: 270px;
+    }
+    
+    img {
+        height: 200px;
+    }
+    
+    h4 {
+        font-size: 15px;
+        margin-top: 1px;
+    }
+
+    footer {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 25px;
+        padding: 20px 0px;
+    }
+    
+    .Logo_2{
+        width: 34%;
+        height: 100%;
+    
+        i {
+            font-size: 27px;
+        }
+    
+        h3 {
+            font-size: 20px;
+        }
+    }
+    
+    .footer_text {
+        width: 62%;
+        font-size: 18px;
+        font-weight: 600;
+    }
+    
+    .Contacts {
+        width: 100%;
+        height: auto;
+        flex-wrap: wrap;
+        gap: 13px;
+    }
+    
+    .Contacts a{
+        transition: .3s;
+        width: 200px;
+        height: 60px;
+    }
+    
+    .Contacts a:hover{
+        background-color: black;
+    
+    }
+}
+@media (min-width: 320px) and (max-width: 552px){
+
+    header {
+        width: 100%;
+        height: auto;
+        justify-content: space-between;
+        padding: 30px 50px;
+    }
+
+    .Menu {
+        width: 100%;
+        border: 1px solid black;
+        overflow: hidden;
+        height: 0px;
+        display: flex;
+        background: white;
+        justify-content: center;
+        flex-direction: column;
+        top: 100%;
+        right: 0%;
+        position: absolute;
+        z-index: 99999999999;
+        transition: 0.5s;
+    }
+
+      .openmenu{
+        width: 100%;
+        border: 1px solid black;
+        overflow: hidden;
+        display: flex;
+        background: white;
+        justify-content: center;
+        flex-direction: column;
+        top: 100%;
+        right: 0%;
+        position: absolute;
+        z-index: 99999999999;
+        transition: 0.5s;
+        height: 400px;
+    }
+
+    #menu_btn {
+        width: 45px;
+        aspect-ratio: 1;
+        display: flex;
+
+        span {
+            height: 4px;
+            background-color: black;
+        }
+    } 
+    
+    .Logo {
+        width: auto;
+        height: auto;
+
+        i {
+            font-size: 30px;
+        }
+
+        h3 {
+            font-size: 20px;
+        }
+    }
+
+    .Title {
+        width: 72%;
+        height: 115px;
+        h4 {
+            font-size: 20px;
+        }
+    
+        span {
+            font-size: 16px;
+        }
+    }
+
+    .Data {
+        width: 70%;
+        height: 155px;
+
+        span {
+            font-size: 25px;
+            gap: 10px;
+        }
+    }
+    #product_box {
+        width: 100%;
+        height: auto;
+    }
+    
+    .product {
+        width: 45%;
+        height: 240px;
+        margin: 6px;
+    }
+    
+
+    img {
+        height: 150px;
+    }
+    
+    h4 {
+        font-size: 15px;
+        margin-top: 1px;
+    }
+
+    footer {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 25px;
+        padding: 20px 0px;
+    }
+    
+    .Logo_2{
+        width: 34%;
+        height: 100%;
+    
+        i {
+            font-size: 27px;
+        }
+    
+        h3 {
+            font-size: 20px;
+        }
+    }
+    
+    .footer_text {
+        width: 62%;
+        font-size: 18px;
+        font-weight: 600;
+    }
+    
+    .Contacts {
+        width: 100%;
+        height: auto;
+        flex-wrap: wrap;
+        gap: 13px;
+    }
+    
+    .Contacts a{
+        transition: .3s;
+        width: 200px;
+        height: 60px;
+    }
+    
+    .Contacts a:hover{
+        background-color: black;
+    
+    }
+
+}  
