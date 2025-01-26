@@ -94,6 +94,11 @@ document.addEventListener('DOMContentLoaded', function () {
         product.appendChild(h4);
 
         product_box.appendChild(product);
+
+        product.addEventListener('click',()=>{
+            localStorage.setItem('product',JSON.stringify(e));
+            this.location.href = "./Detal.html"
+          })
     });
 });
 

@@ -5,6 +5,39 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+
+.ProdData {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(46, 45, 45);
+    gap: 20px;
+
+    &>img {
+        width: 800px;
+        height: 800px;
+        object-fit: cover;
+        box-shadow: 0 15px 20px rgba(0, 0, 0, 0.342);
+    }
+
+    .prodData_info {
+        bottom: 0;
+        border-radius: 24px;
+        background-color: rgba(0, 0, 0, 0.308);
+        box-shadow: 0 15px 20px rgba(0, 0, 0, 0.342);
+        width: auto;
+        padding: 20px;
+
+        h1 {
+            color: white;
+            font-weight: bold;
+        }
+    }
+
+}
+
 header {
     width: 100%;
     height: 150px;
@@ -18,7 +51,7 @@ header {
     z-index: 9999999999999999999999999;
 }
 
-.Menu{
+.Menu {
     width: 100%;
     height: auto;
     opacity: 1;
@@ -189,7 +222,7 @@ footer {
     overflow: hidden;
 }
 
-.Logo_2{
+.Logo_2 {
     width: 8%;
     height: 100%;
     display: flex;
@@ -222,7 +255,7 @@ footer {
     margin-right: -5%;
 }
 
-.Contacts a{
+.Contacts a {
     width: 210px;
     height: 100px;
     display: flex;
@@ -239,44 +272,49 @@ footer {
     transition: .3s;
 }
 
-.Contacts a:first-child{
+.Contacts a:first-child {
     border: none;
-    background: rgb(131,58,180);
-    background: linear-gradient(166deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    background: rgb(131, 58, 180);
+    background: linear-gradient(166deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
 
-    i{  padding: 0 0 0 13px;
+    i {
+        padding: 0 0 0 13px;
         font-size: 40px;
     }
 }
 
-.Contacts a:nth-child(2){
+.Contacts a:nth-child(2) {
     border: none;
     background-color: #1877F2;
 
-    i{  padding: 0 0 0 13px;
+    i {
+        padding: 0 0 0 13px;
         font-size: 40px;
     }
 }
 
-.Contacts a:nth-child(3){
+.Contacts a:nth-child(3) {
     border: none;
     background-color: #13990a;
 
-    i{  padding: 0 0 0 13px;
+    i {
+        padding: 0 0 0 13px;
         font-size: 40px;
     }
 }
-.Contacts a:last-child{
+
+.Contacts a:last-child {
     border: none;
     background-color: #7360f2;
 
-    i{  padding: 0 0 0 13px;
+    i {
+        padding: 0 0 0 13px;
         font-size: 40px;
     }
-    
+
 }
 
-.Contacts a:hover{
+.Contacts a:hover {
     background-color: black;
 
 }
@@ -347,16 +385,16 @@ footer {
         align-items: center;
         flex-wrap: wrap;
     }
-    
+
     .product {
         width: 550px;
-        height: 550px;
+        height: auto;
     }
-    
+
     img {
         height: 450px;
     }
-    
+
     h4 {
         font-size: 33px;
         margin-top: 15px;
@@ -366,74 +404,79 @@ footer {
         width: 100%;
         height: 200px;
     }
-    
-    .Logo_2{
+
+    .Logo_2 {
         width: 9%;
         height: 100%;
-    
+
         i {
             font-size: 53px;
         }
-    
+
         h3 {
             font-size: 33px;
         }
     }
-    
+
     .footer_text {
         font-size: 27px;
         font-weight: 600;
     }
-    
+
     .Contacts {
         width: 40%;
         height: 100%;
     }
-    
-    .Contacts a{
+
+    .Contacts a {
         transition: .3s;
     }
-    
-    .Contacts a:first-child{
+
+    .Contacts a:first-child {
         width: 210px;
         height: 100px;
-    
-        i{  padding: 0 0 0 13px;
+
+        i {
+            padding: 0 0 0 13px;
             font-size: 40px;
         }
     }
-    
-    .Contacts a:nth-child(2){
+
+    .Contacts a:nth-child(2) {
         width: 210px;
-        height: 100px;  
-    
-        i{  padding: 0 0 0 13px;
+        height: 100px;
+
+        i {
+            padding: 0 0 0 13px;
             font-size: 40px;
         }
     }
-    
-    .Contacts a:nth-child(3){
+
+    .Contacts a:nth-child(3) {
         width: 210px;
         height: 100px;
         border: none;
-    
-        i{  padding: 0 0 0 13px;
+
+        i {
+            padding: 0 0 0 13px;
             font-size: 40px;
         }
     }
-    .Contacts a:last-child{
+
+    .Contacts a:last-child {
         width: 210px;
         height: 100px;
-    
-        i{  padding: 0 0 0 13px;
+
+        i {
+            padding: 0 0 0 13px;
             font-size: 40px;
         }
-        
+
     }
-    
-    .Contacts a:hover{
+
+    .Contacts a:hover {
         background-color: black;
-    
+
     }
 
 }
@@ -487,16 +530,16 @@ footer {
         width: 100%;
         height: auto;
     }
-    
+
     .product {
         width: 360px;
-        height: 370px;
+        height: auto;
     }
 
     img {
         height: 250px;
     }
-    
+
     h4 {
         font-size: 23px;
         margin-top: 15px;
@@ -506,73 +549,78 @@ footer {
         width: 100%;
         height: 230px;
     }
-    
-    .Logo_2{
+
+    .Logo_2 {
         width: 4%;
         height: 100%;
-    
+
         i {
             font-size: 47px;
         }
-    
+
         h3 {
             font-size: 30px;
         }
     }
-    
+
     .footer_text {
         font-size: 22px;
         font-weight: 600;
     }
-    
+
     .Contacts {
         width: 30%;
         height: 100%;
         flex-wrap: wrap;
         gap: 8px;
     }
-    
-    .Contacts a{
+
+    .Contacts a {
         width: 200px;
         height: 100px;
         transition: .3s;
     }
-    
-    .Contacts a:first-child{
-    
-        i{  padding: 0 0 0 1px;
+
+    .Contacts a:first-child {
+
+        i {
+            padding: 0 0 0 1px;
             font-size: 30px;
         }
     }
-    
-    .Contacts a:nth-child(2){
 
-        i{  padding: 0 0 0 13px;
-            font-size: 40px;
-        }
-    }
-    
-    .Contacts a:nth-child(3){
-        i{  padding: 0 0 0 13px;
-            font-size: 40px;
-        }
-    }
-    .Contacts a:last-child{
+    .Contacts a:nth-child(2) {
 
-        i{  padding: 0 0 0 13px;
+        i {
+            padding: 0 0 0 13px;
             font-size: 40px;
         }
-        
     }
-    
-    .Contacts a:hover{
+
+    .Contacts a:nth-child(3) {
+        i {
+            padding: 0 0 0 13px;
+            font-size: 40px;
+        }
+    }
+
+    .Contacts a:last-child {
+
+        i {
+            padding: 0 0 0 13px;
+            font-size: 40px;
+        }
+
+    }
+
+    .Contacts a:hover {
         background-color: black;
-    
+
     }
 
 }
 
-@media (min-width: 1100px) and (max-width: 1200px){
+@media (min-width: 1100px) and (max-width: 1200px) {
     .Title {
         width: 35%;
         height: 100%;
@@ -595,7 +643,8 @@ footer {
         }
     }
 }
-@media (min-width: 1200px) and (max-width: 1300px){
+
+@media (min-width: 1200px) and (max-width: 1300px) {
     .Title {
         width: 35%;
         height: 100%;
@@ -618,19 +667,19 @@ footer {
         }
     }
 
-    .Logo_2{
+    .Logo_2 {
         width: 30%;
         height: 100%;
-    
+
         i {
             font-size: 27px;
         }
-    
+
         h3 {
             font-size: 20px;
         }
     }
-    
+
     .footer_text {
         width: 20%;
         font-size: 17px;
@@ -643,71 +692,74 @@ footer {
         flex-wrap: wrap;
         gap: 13px;
     }
-    
-    .Contacts a{
+
+    .Contacts a {
         transition: .3s;
     }
-    
-    .Contacts a:first-child{
+
+    .Contacts a:first-child {
         width: 170px;
         height: 85px;
 
-        i{ 
+        i {
             padding: 0 0 0 1px;
             font-size: 22px;
         }
     }
-    
-    .Contacts a:nth-child(2){
+
+    .Contacts a:nth-child(2) {
         width: 170px;
         height: 85px;
 
-        i{  
+        i {
             padding: 0 0 0 1px;
             font-size: 22px;
         }
     }
-    
-    .Contacts a:nth-child(3){
+
+    .Contacts a:nth-child(3) {
         width: 170px;
         height: 85px;
 
-        i{  
+        i {
             padding: 0 0 0 1px;
             font-size: 22px;
         }
     }
-    .Contacts a:last-child{
+
+    .Contacts a:last-child {
         width: 170px;
         height: 85px;
 
-        i{ 
+        i {
             padding: 0 0 0 1px;
             font-size: 22px;
         }
     }
 }
-@media (min-width: 1300px) and (max-width: 1440px){
+
+@media (min-width: 1300px) and (max-width: 1440px) {
     .Title {
-    width: 35%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 6px;
+        width: 35%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 6px;
 
-    h4 {
-        font-size: 20px;
-        font-weight: 800;
-        border-bottom: 1px solid black;
-    }
+        h4 {
+            font-size: 20px;
+            font-weight: 800;
+            border-bottom: 1px solid black;
+        }
 
-    span {
-        font-size: 20px;
-        font-weight: 800;
+        span {
+            font-size: 20px;
+            font-weight: 800;
+        }
     }
-}}
+}
 
 @media (min-width: 1024px) and (max-width: 1440px) {
     header {
@@ -737,7 +789,7 @@ footer {
             font-size: 25px;
         }
     }
- 
+
     .Title {
         width: 35%;
         height: 100%;
@@ -757,7 +809,7 @@ footer {
             font-size: 20px;
             font-weight: 800;
         }
-    } 
+    }
 
     .Data {
         width: 15%;
@@ -776,20 +828,21 @@ footer {
             gap: 10px;
         }
     }
+
     #product_box {
         width: 100%;
         height: auto;
     }
-    
+
     .product {
         width: 280px;
-        height: 300px;
+        height: auto;
     }
-    
+
     img {
         height: 240px;
     }
-    
+
     h4 {
         font-size: 19px;
         margin-top: 10px;
@@ -799,25 +852,25 @@ footer {
         width: 100%;
         height: 230px;
     }
-    
-    .Logo_2{
+
+    .Logo_2 {
         width: 4%;
         height: 100%;
-    
+
         i {
             font-size: 47px;
         }
-    
+
         h3 {
             font-size: 30px;
         }
     }
-    
+
     .footer_text {
         font-size: 20px;
         font-weight: 600;
     }
-    
+
     .Contacts {
         width: 35%;
         height: 100%;
@@ -828,47 +881,63 @@ footer {
         gap: 8px;
         overflow: hidden;
     }
-    
-    .Contacts a{
+
+    .Contacts a {
         width: 80px;
         height: 80px;
         transition: .3s;
     }
-    
-    .Contacts a:first-child{
-    
-        i{  padding: 0 0 0 1px;
+
+    .Contacts a:first-child {
+
+        i {
+            padding: 0 0 0 1px;
             font-size: 30px;
         }
     }
-    
-    .Contacts a:nth-child(2){
 
-        i{  padding: 0 0 0 13px;
-            font-size: 40px;
-        }
-    }
-    
-    .Contacts a:nth-child(3){
-        i{  padding: 0 0 0 13px;
-            font-size: 40px;
-        }
-    }
-    .Contacts a:last-child{
+    .Contacts a:nth-child(2) {
 
-        i{  padding: 0 0 0 13px;
+        i {
+            padding: 0 0 0 13px;
             font-size: 40px;
         }
-        
     }
-    
-    .Contacts a:hover{
+
+    .Contacts a:nth-child(3) {
+        i {
+            padding: 0 0 0 13px;
+            font-size: 40px;
+        }
+    }
+
+    .Contacts a:last-child {
+
+        i {
+            padding: 0 0 0 13px;
+            font-size: 40px;
+        }
+
+    }
+
+    .Contacts a:hover {
         background-color: black;
-    
+
     }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
+
+    .ProdData{
+
+        img{
+            width: 100%;
+            height: 400px;
+        }
+        .prodData_info{
+            width: 100%;
+        }
+    }
     header {
         width: 100%;
         height: 150px;
@@ -891,7 +960,7 @@ footer {
         h4 {
             font-size: 16px;
         }
-    
+
         span {
             font-size: 20px;
         }
@@ -906,20 +975,21 @@ footer {
             gap: 10px;
         }
     }
+
     #product_box {
         width: 100%;
         height: auto;
     }
-    
+
     .product {
         width: 220px;
-        height: 220px;
+        height: auto;
     }
-    
+
     img {
         height: 170px;
     }
-    
+
     h4 {
         font-size: 16px;
         margin-top: 10px;
@@ -933,83 +1003,96 @@ footer {
         align-items: center;
         flex-wrap: wrap;
     }
-    
-    .Logo_2{
+
+    .Logo_2 {
         width: 25%;
         height: 100%;
-    
+
         i {
             font-size: 27px;
         }
-    
+
         h3 {
             font-size: 20px;
         }
     }
-    
+
     .footer_text {
         width: 25%;
         font-size: 17px;
         font-weight: 600;
     }
-    
+
     .Contacts {
         width: 51%;
         height: auto;
         flex-wrap: wrap;
         gap: 13px;
     }
-    
-    .Contacts a{
+
+    .Contacts a {
         transition: .3s;
     }
-    
-    .Contacts a:first-child{
+
+    .Contacts a:first-child {
         width: 140px;
         height: 85px;
 
-        i{ 
+        i {
             padding: 0 0 0 1px;
             font-size: 27px;
         }
     }
-    
-    .Contacts a:nth-child(2){
+
+    .Contacts a:nth-child(2) {
         width: 140px;
         height: 85px;
 
-        i{  
+        i {
             padding: 0 0 0 1px;
             font-size: 27px;
         }
     }
-    
-    .Contacts a:nth-child(3){
+
+    .Contacts a:nth-child(3) {
         width: 140px;
         height: 85px;
 
-        i{  
+        i {
             padding: 0 0 0 1px;
             font-size: 27px;
         }
     }
-    .Contacts a:last-child{
+
+    .Contacts a:last-child {
         width: 140px;
         height: 85px;
 
-        i{ 
+        i {
             padding: 0 0 0 1px;
             font-size: 27px;
         }
     }
-    
-    .Contacts a:hover{
+
+    .Contacts a:hover {
         background-color: black;
-    
+
     }
 }
 
-@media (min-width: 552px) and (max-width: 640px){
+@media (min-width: 552px) and (max-width: 768px) {
+
+    .ProdData{
+        flex-direction: column;
+
+        img{
+            width: 100%;
+            height: 400px;
+        }
+        .prodData_info{
+            width: 100%;
+        }
+    }
 
     header {
         width: 100%;
@@ -1032,7 +1115,7 @@ footer {
         transition: 0.5s;
     }
 
-      .openmenu{
+    .openmenu {
         width: 100%;
         border: 1px solid black;
         overflow: hidden;
@@ -1057,159 +1140,7 @@ footer {
             height: 4px;
             background-color: black;
         }
-    } 
-
-    .Logo {
-        width: 27%;
-        height: 100%;
-
-        i {
-            font-size: 25px;
-        }
-
-        h3 {
-            font-size: 16px;
-        }
     }
-
-    .Title {
-        width: 72%;
-        height: 115px;
-        h4 {
-            font-size: 20px;
-        }
-    
-        span {
-            font-size: 16px;
-        }
-    }
-
-    .Data {
-        width: 40%;
-        height: 155px;
-
-        span {
-            font-size: 25px;
-            gap: 10px;
-        }
-    }
-    #product_box {
-        width: 100%;
-        height: auto;
-    }
-    
-    .product {
-        width: 236px;
-        height: 270px;
-    }
-    
-    img {
-        height: 200px;
-    }
-    
-    h4 {
-        font-size: 15px;
-        margin-top: 1px;
-    }
-
-    footer {
-        width: 100%;
-        height: auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        gap: 25px;
-        padding: 20px 0px;
-    }
-    
-    .Logo_2{
-        width: 34%;
-        height: 100%;
-    
-        i {
-            font-size: 27px;
-        }
-    
-        h3 {
-            font-size: 20px;
-        }
-    }
-    
-    .footer_text {
-        width: 62%;
-        font-size: 18px;
-        font-weight: 600;
-    }
-    
-    .Contacts {
-        width: 100%;
-        height: auto;
-        flex-wrap: wrap;
-        gap: 13px;
-    }
-    
-    .Contacts a{
-        transition: .3s;
-        width: 190px;
-        height: 60px;
-    }
-    
-    .Contacts a:hover{
-        background-color: black;
-    
-    }
-
-}
-@media (min-width: 640px) and (max-width: 768px){
-
-    header {
-        width: 100%;
-        height: 150px;
-    }
-
-    .Menu {
-        width: 100%;
-        border: 1px solid black;
-        overflow: hidden;
-        height: 0px;
-        display: flex;
-        background: white;
-        justify-content: center;
-        flex-direction: column;
-        top: 100%;
-        right: 0%;
-        position: absolute;
-        z-index: 99999999999;
-        transition: 0.5s;
-    }
-
-      .openmenu{
-        width: 100%;
-        border: 1px solid black;
-        overflow: hidden;
-        display: flex;
-        background: white;
-        justify-content: center;
-        flex-direction: column;
-        top: 100%;
-        right: 0%;
-        position: absolute;
-        z-index: 99999999999;
-        transition: 0.5s;
-        height: 400px;
-    }
-
-    #menu_btn {
-        width: 45px;
-        aspect-ratio: 1;
-        display: flex;
-
-        span {
-            height: 4px;
-            background-color: black;
-        }
-    } 
 
     .Logo {
         width: 27%;
@@ -1227,10 +1158,11 @@ footer {
     .Title {
         width: 60%;
         height: 115px;
+
         h4 {
             font-size: 20px;
         }
-    
+
         span {
             font-size: 16px;
         }
@@ -1245,20 +1177,22 @@ footer {
             gap: 10px;
         }
     }
+
     #product_box {
         width: 100%;
         height: auto;
     }
-    
+
     .product {
-        width: 280px;
-        height: 270px;
+        width: 250px;
+        height: auto;
+        margin: 10px;
     }
-    
+
     img {
         height: 200px;
     }
-    
+
     h4 {
         font-size: 15px;
         margin-top: 1px;
@@ -1274,45 +1208,46 @@ footer {
         gap: 25px;
         padding: 20px 0px;
     }
-    
-    .Logo_2{
+
+    .Logo_2 {
         width: 34%;
         height: 100%;
-    
+
         i {
             font-size: 27px;
         }
-    
+
         h3 {
             font-size: 20px;
         }
     }
-    
+
     .footer_text {
         width: 62%;
         font-size: 18px;
         font-weight: 600;
     }
-    
+
     .Contacts {
         width: 100%;
         height: auto;
         flex-wrap: wrap;
         gap: 13px;
     }
-    
-    .Contacts a{
+
+    .Contacts a {
         transition: .3s;
         width: 200px;
         height: 60px;
     }
-    
-    .Contacts a:hover{
+
+    .Contacts a:hover {
         background-color: black;
-    
+
     }
 }
-@media (min-width: 320px) and (max-width: 552px){
+
+@media (min-width: 320px) and (max-width: 552px) {
 
     header {
         width: 100%;
@@ -1321,6 +1256,17 @@ footer {
         padding: 30px 50px;
     }
 
+    .ProdData{
+        flex-direction: column;
+
+        img{
+            width: 100%;
+            height: 400px;
+        }
+        .prodData_info{
+            width: 100%;
+        }
+    }
     .Menu {
         width: 100%;
         border: 1px solid black;
@@ -1337,7 +1283,7 @@ footer {
         transition: 0.5s;
     }
 
-      .openmenu{
+    .openmenu {
         width: 100%;
         border: 1px solid black;
         overflow: hidden;
@@ -1362,8 +1308,8 @@ footer {
             height: 4px;
             background-color: black;
         }
-    } 
-    
+    }
+
     .Logo {
         width: auto;
         height: auto;
@@ -1380,10 +1326,11 @@ footer {
     .Title {
         width: 72%;
         height: 115px;
+
         h4 {
             font-size: 20px;
         }
-    
+
         span {
             font-size: 16px;
         }
@@ -1398,22 +1345,23 @@ footer {
             gap: 10px;
         }
     }
+
     #product_box {
         width: 100%;
         height: auto;
     }
-    
+
     .product {
         width: 45%;
-        height: 240px;
+        height: auto;
         margin: 6px;
     }
-    
+
 
     img {
         height: 150px;
     }
-    
+
     h4 {
         font-size: 15px;
         margin-top: 1px;
@@ -1429,42 +1377,42 @@ footer {
         gap: 25px;
         padding: 20px 0px;
     }
-    
-    .Logo_2{
+
+    .Logo_2 {
         width: 34%;
         height: 100%;
-    
+
         i {
             font-size: 27px;
         }
-    
+
         h3 {
             font-size: 20px;
         }
     }
-    
+
     .footer_text {
         width: 62%;
         font-size: 18px;
         font-weight: 600;
     }
-    
+
     .Contacts {
         width: 100%;
         height: auto;
         flex-wrap: wrap;
         gap: 13px;
     }
-    
-    .Contacts a{
+
+    .Contacts a {
         transition: .3s;
         width: 200px;
         height: 60px;
     }
-    
-    .Contacts a:hover{
+
+    .Contacts a:hover {
         background-color: black;
-    
+
     }
 
-}  
+}

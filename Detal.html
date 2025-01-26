@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="ProdData">
+        <img src="" alt="">
+        <div class="prodData_info"></div>
+    </div>
+    <script>
+        var prodData = JSON.parse(localStorage.getItem('product'));
+        
+            document.querySelector('.ProdData img').src = prodData.img;
+            document.querySelector('.prodData_info').innerHTML = `
+            <h1>${prodData.name}</h1>
+            `
+    </script>
+</body>
+</html>
